@@ -92,7 +92,7 @@ num3=${3}
 #Recibir la ruta de un fichero e indicar si existe
 
 Fichero.sh=$1
-if test -e "Fichero.sh"; then
+if [test -e "Fichero.sh"]; then
   echo "El fichero existe"
 else
   echo "El fichero no existe"
@@ -125,7 +125,7 @@ done
 #Leer una palabra por teclado y mostrarla por consola. Debe realizar esta operación 10 veces.
 
 read -p "Escribe una palabra: " palabra
-for i in {1..10}; do
+for (i in {1..10}); do
   echo "$palabra"
 done
 
