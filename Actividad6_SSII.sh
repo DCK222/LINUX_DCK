@@ -125,7 +125,7 @@ done
 #Leer una palabra por teclado y mostrarla por consola. Debe realizar esta operación 10 veces.
 
 read -p "Escribe una palabra: " palabra
-for (i in {1..10}); do
+for i in {1..10}; do
   echo "$palabra"
 done
 
